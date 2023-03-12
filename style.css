@@ -1,0 +1,57 @@
+.mem{
+    max-width: 500px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.mem-item{   
+    border-top: 1px solid red;
+}
+.mem-title{
+    font-weight: 800;
+    font-size: 24px;
+    position: relative;
+    color: blue;
+    display: block;
+    padding: 15px 20px;
+    max-width: 500px;
+    transition: color .2s ease-out;
+    cursor: pointer;
+}
+.mem-title:hover{
+    color: black;
+}
+.mem-pic img{
+   display: none;
+   margin: 10px 150px auto;
+}
+
+.mem-input{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.mem-input:checked ~ .mem-pic img{
+    display: block;
+}
+
+.mem-item:hover .mem-title::after {
+    
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent red transparent;
+}
+.mem-title::after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: red transparent transparent transparent;
+    right: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mem-item:hover .mem-pic img{
+    display: block;
+}
+
