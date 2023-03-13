@@ -2,7 +2,7 @@ body{
     font-size: 10px;
 }
 h1{
-    font-size: 2.4rem;
+    font-size: 3rem;
     text-align: center;
 }
 .mem{
@@ -20,7 +20,7 @@ h1{
 
 .mem-title{
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2.8rem;
     position: relative;
     color: blue;
     display: block;
@@ -84,9 +84,12 @@ h1{
     .mem{
         max-width: 18rem;
     }
+    h1{
+        font-size: 2.4rem;
+    }
 .mem-title{
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.7rem;
     position: relative;
     color: blue;
     display: block;
@@ -106,9 +109,12 @@ h1{
     .mem{
         max-width: 15rem;
     }
+    h1{
+        font-size: 2rem;
+    }
 .mem-title{
     font-weight: 600;
-    font-size: 1,4rem;
+    font-size: 1rem;
     position: relative;
     color: blue;
     display: block;
