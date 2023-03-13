@@ -1,19 +1,31 @@
+body{
+    font-size: 10px;
+}
+h1{
+    font-size: 2.4rem;
+    text-align: center;
+}
 .mem{
-    max-width: 500px;
-    margin: 20px auto;
+    max-width: 30rem;
+    margin: 2rem auto;
     cursor: pointer;
+}
+
+.mem:hover .mem_title{
+    color: black;
 }
 .mem-item{   
     border-top: 1px solid red;
 }
+
 .mem-title{
     font-weight: 800;
-    font-size: 24px;
+    font-size: 2rem;
     position: relative;
     color: blue;
     display: block;
-    padding: 15px 20px;
-    max-width: 500px;
+    padding: 1,9rem 2rem;
+    max-width: 30rem;
     transition: color .2s ease-out;
     cursor: pointer;
 }
@@ -21,17 +33,28 @@
     color: black;
 }
 .mem-pic img{
-   display: none;
-   margin: 10px 150px auto;
+   display: block;
+   margin: 1rem 15rem auto;
+   transition: width 1s, height 1s;
+   width: 0;
+   height: 0;
 }
 
 .mem-input{
     appearance: none;
     -webkit-appearance: none;
 }
+
 .mem-input:checked ~ .mem-pic img{
-    display: block;
+   height: 20rem;
+   width: 18rem;
+   transition: none;
+   margin: 0 auto;
 }
+.mem-item:active{
+    opacity: 0.7;
+}
+
 
 .mem-item:hover .mem-title::after {
     
@@ -52,6 +75,24 @@
 }
 
 .mem-item:hover .mem-pic img{
-    display: block;
+    height: 20rem;
+    width: 18rem;
+    transition: height 1s, width 1s;
+    margin: 0 auto;
 }
 
+@media screen and (max-width: 360px){
+    .mem{
+        max-width: 15rem;
+    }
+.mem-title{
+    font-weight: 400;
+    font-size: 1,4rem;
+    position: relative;
+    color: blue;
+    display: block;
+    padding: 1,9rem 2rem;
+    max-width: 15rem;
+}
+
+}
